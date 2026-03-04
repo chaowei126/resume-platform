@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Serif+SC:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+  --font-body: 'Source Serif 4', 'Noto Serif SC', Georgia, serif;
+  
+  --color-ink: #141820;
+  --color-ink2: #2e3545;
+  --color-mid: #5a6070;
+  --color-muted: #8a909e;
+  --color-rule: #d8dae0;
+  --color-rule-light: #eceef2;
+  --color-bg: #fafaf8;
+  --color-paper: #ffffff;
+  --color-gold: #b8882a;
+  --color-gold-dim: #b8882a18;
+  --color-gold-border: #b8882a44;
+  --color-green: #2a7a5a;
+  --color-navy: #1a2e50;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+  .print-exact { 
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact; 
+  }
+  .main-grid {
+    display: block !important;
+  }
+  .sidebar-col {
+    border-right: none !important;
+    padding-right: 0 !important;
+    margin-bottom: 2rem;
+  }
+  .content-col {
+    padding-left: 0 !important;
+  }
+}
+
+/* Custom animations */
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
