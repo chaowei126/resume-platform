@@ -84,7 +84,7 @@ export default function App() {
           </div>
           <div className="text-xs text-mid leading-[2.2] md:text-right">
             <div><a href={`mailto:${t.sidebar.contact.email}`} className="text-ink hover:text-gold transition-colors">{t.sidebar.contact.email}</a></div>
-            <div><a href={`tel:${t.sidebar.contact.phone.replace(/\s/g, '')}`} className="text-ink hover:text-gold transition-colors">{t.sidebar.contact.phone}</a></div>
+            <div><span className="text-ink">{t.sidebar.contact.phone}</span></div>
             <div>{t.hero.loc}</div>
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function App() {
             </div>
             <div className="flex flex-col gap-[1px] py-1.5 border-b border-rule-light">
               <div className="text-[9px] text-muted tracking-[2px] uppercase">Phone</div>
-              <div className="text-xs text-ink"><a href={`tel:${t.sidebar.contact.phone.replace(/\s/g, '')}`} className="hover:text-gold">{t.sidebar.contact.phone}</a></div>
+              <div className="text-xs text-ink">{t.sidebar.contact.phone}</div>
             </div>
             <div className="flex flex-col gap-[1px] py-1.5">
               <div className="text-[9px] text-muted tracking-[2px] uppercase">Location</div>
@@ -323,7 +323,7 @@ export default function App() {
           <a href={`mailto:${t.sidebar.contact.email}`} className="flex items-center justify-between gap-3 px-4 py-3 text-[11px] tracking-[2px] uppercase transition-colors bg-gold text-ink hover:bg-[#d4a030]">
             {t.cta.email}
           </a>
-          <a href={`tel:${t.sidebar.contact.phone.replace(/\s/g, '')}`} className="flex items-center justify-between gap-3 px-4 py-3 text-[11px] tracking-[2px] uppercase transition-colors border border-[#3a3f4a] text-[#aaa] hover:border-gold hover:text-gold">
+          <a href="#" onClick={(e) => { e.preventDefault(); alert('出于隐私保护，请先通过邮件联系获取完整电话号码。\nFor privacy reasons, please contact via email first.'); }} className="flex items-center justify-between gap-3 px-4 py-3 text-[11px] tracking-[2px] uppercase transition-colors border border-[#3a3f4a] text-[#aaa] hover:border-gold hover:text-gold">
             {t.cta.phone}
           </a>
         </div>

@@ -11,7 +11,7 @@ export const translations = {
       domains: { title: '擅长领域', feat: ['银行/金融', '电信运营商'], norm: ['数据治理平台', '企业数字化', '营销中台'] },
       keywords: { title: '技术关键词', tags: ['Spring Cloud', 'Spring Boot', 'Hadoop', 'Hive', 'Kafka', 'HBase', 'ELK', 'Redis', 'MySQL', 'K8s', 'Docker', 'Jenkins', 'Linux/Shell', 'Vue.js', 'Node.js', 'Uniapp'] },
       intent: { title: '求职意向', items: [{l:'目标职位', v:'高级工程师 / 开发组长\n技术经理 / 技术负责人'}, {l:'目标城市', v:'不限 · 可远程'}, {l:'到岗时间', v:'1个月内'}, {l:'工作方式', v:'全职 · 可出差'}] },
-      contact: { title: '联系方式', email: 'chaowei126@gmail.com', phone: '181 **** ****', loc: '长春市' }
+      contact: { title: '联系方式', email: 'chaowei126@gmail.com', phone: '181 **** 3605', loc: '长春市' }
     },
     content: {
       summary: {
@@ -71,7 +71,7 @@ export const translations = {
       domains: { title: 'Domains', feat: ['Banking/Finance', 'Telecom'], norm: ['Data Governance', 'Enterprise Digital', 'Marketing Hub'] },
       keywords: { title: 'Keywords', tags: ['Spring Cloud', 'Spring Boot', 'Hadoop', 'Hive', 'Kafka', 'HBase', 'ELK', 'Redis', 'MySQL', 'K8s', 'Docker', 'Jenkins', 'Linux/Shell', 'Vue.js', 'Node.js', 'Uniapp'] },
       intent: { title: 'Job Intent', items: [{l:'Target Role', v:'Senior Engineer / Tech Lead\nTech Manager'}, {l:'Target City', v:'Any · Remote OK'}, {l:'Availability', v:'Within 1 month'}, {l:'Work Type', v:'Full-time · Travel OK'}] },
-      contact: { title: 'Contact', email: 'chaowei126@gmail.com', phone: '181 **** ****', loc: 'Changchun City' }
+      contact: { title: 'Contact', email: 'chaowei126@gmail.com', phone: '181 **** 3605', loc: 'Changchun City' }
     },
     content: {
       summary: {
@@ -131,7 +131,7 @@ export const translations = {
       domains: { title: '得意分野', feat: ['銀行/金融', '通信キャリア'], norm: ['データガバナンス', '企業DX', 'マーケティング基盤'] },
       keywords: { title: '技術キーワード', tags: ['Spring Cloud', 'Spring Boot', 'Hadoop', 'Hive', 'Kafka', 'HBase', 'ELK', 'Redis', 'MySQL', 'K8s', 'Docker', 'Jenkins', 'Linux/Shell', 'Vue.js', 'Node.js', 'Uniapp'] },
       intent: { title: '希望条件', items: [{l:'希望職種', v:'シニアエンジニア / テックリード\n技術マネージャー'}, {l:'希望勤務地', v:'不問 · リモート可'}, {l:'入社可能時期', v:'1ヶ月以内'}, {l:'勤務形態', v:'正社員 · 出張可'}] },
-      contact: { title: '連絡先', email: 'chaowei126@gmail.com', phone: '181 **** ****', loc: '長春市' }
+      contact: { title: '連絡先', email: 'chaowei126@gmail.com', phone: '181 **** 3605', loc: '長春市' }
     },
     content: {
       summary: {
