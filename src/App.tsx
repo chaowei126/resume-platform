@@ -3,7 +3,12 @@ import { translations, Language } from './i18n';
 import { Moon, Sun } from 'lucide-react';
 
 export default function App() {
-  const [lang, setLang] = useState<Language>('zh');
+  const [lang, setLang] = useState<Language>(() => {
+    const browserLang = navigator.language.toLowerCase();
+    if (browserLang.startsWith('zh')) return 'zh'; 
+    if (browserLang.startsWith('ja')) return 'ja'; 
+    return 'en';
+  });
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const t = translations[lang];
 
