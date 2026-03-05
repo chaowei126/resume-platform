@@ -100,12 +100,6 @@ export default function App() {
                 </div>
               ))}
             </div>
-            
-            {/* Terminal Block */}
-            <div className="bg-rule-light/50 border border-rule p-4 rounded-sm font-mono text-xs text-mid max-w-lg transition-colors duration-300">
-              <div className="text-accent font-bold mb-1">~/ whoami</div>
-              <div>chaowei - Software Engineer @ BONC</div>
-            </div>
           </div>
           <div className="md:text-right">
             <div className="inline-flex items-center gap-2 bg-accent-dim border border-accent-border text-accent px-4 py-1.5 text-[11px] tracking-[2px] uppercase mb-3.5 transition-colors duration-300">
