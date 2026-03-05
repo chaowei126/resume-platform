@@ -1,32 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Serif+SC:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Serif+SC:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-serif: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
   --font-body: 'Source Serif 4', 'Noto Serif SC', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
   
-  --color-ink: #141820;
-  --color-ink2: #2e3545;
-  --color-mid: #5a6070;
-  --color-muted: #8a909e;
-  --color-rule: #d8dae0;
-  --color-rule-light: #eceef2;
-  --color-bg: #fafaf8;
-  --color-paper: #ffffff;
-  --color-gold: #b8882a;
-  --color-gold-dim: #b8882a18;
-  --color-gold-border: #b8882a44;
-  --color-green: #2a7a5a;
-  --color-navy: #1a2e50;
+  --color-ink: var(--ink);
+  --color-ink2: var(--ink2);
+  --color-mid: var(--mid);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-rule-light: var(--rule-light);
+  --color-bg: var(--bg);
+  --color-paper: var(--paper);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-accent-border: var(--accent-border);
+  --color-navy: var(--navy);
+}
+
+:root {
+  /* Light Theme - Tech Blue x Deep Sea Blue */
+  --bg: #f4f6f8;
+  --paper: #ffffff;
+  --ink: #0a192f;
+  --ink2: #1e293b;
+  --mid: #475569;
+  --muted: #94a3b8;
+  --rule: #cbd5e1;
+  --rule-light: #e2e8f0;
+  --accent: #0066cc;
+  --accent-dim: #0066cc15;
+  --accent-border: #0066cc40;
+  --navy: #0a192f;
+}
+
+.dark {
+  /* Dark Theme */
+  --bg: #0a192f;
+  --paper: #112240;
+  --ink: #e6f1ff;
+  --ink2: #ccd6f6;
+  --mid: #8892b0;
+  --muted: #60a5fa;
+  --rule: #233554;
+  --rule-light: #1e2d4a;
+  --accent: #38bdf8;
+  --accent-dim: #38bdf815;
+  --accent-border: #38bdf840;
+  --navy: #e6f1ff;
 }
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-ink);
+  background-color: var(--bg);
+  color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
   line-height: 1.7;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media print {
@@ -49,7 +82,6 @@ body {
   }
 }
 
-/* Custom animations */
 @keyframes pulse-soft {
   0%, 100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.4); opacity: 0.6; }
