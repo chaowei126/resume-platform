@@ -93,7 +93,8 @@ export default function App() {
             <div className="font-serif italic text-[clamp(15px,2vw,20px)] text-mid mb-5">
               {t.hero.title}
             </div>
-            <div className="flex flex-wrap gap-1.5 mb-6">
+            {/* 修复点：移除了这里的 mb-6，让左右底部对齐 */}
+            <div className="flex flex-wrap gap-1.5">
               {t.hero.tags.map((tag, i) => (
                 <div key={i} className="text-[10px] tracking-[2px] text-mid border border-rule px-2.5 py-1 uppercase bg-paper transition-colors duration-300 hover:border-accent hover:text-accent">
                   {tag}
