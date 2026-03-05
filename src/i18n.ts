@@ -2,7 +2,7 @@ export type Language = 'zh' | 'en' | 'ja';
 
 export const translations = {
   zh: {
-    topbar: { back: '← 技术主页', center: '候选人简报 · CANDIDATE BRIEF', share: '分享', print: '打印 / PDF', copied: '已复制' },
+    topbar: { back: '← 个人主页', center: '候选人简报 · CANDIDATE BRIEF', share: '分享', print: '打印 / PDF', copied: '已复制' },
     hero: { eyebrow: '候选人简报 · Senior Engineer Profile', name: '魏超', title: '高级软件工程师 / 项目技术组长 · 19年经验', tags: ['金融行业', '电信行业', 'Java / Spring Cloud', '大数据治理', 'K8s 容器化', '开发组长'], avail: '开放职业机会 · 2026', loc: '长春 · 可远程 · 可出差' },
     sidebar: {
       note: { label: '职位说明', title: '软件工程师', sub: '↳ 多个项目担任开发组长 / 技术负责人' },
@@ -16,7 +16,7 @@ export const translations = {
     content: {
       summary: {
         title: '候选人概述', sub: 'EXECUTIVE SUMMARY',
-        text: '19年工作经验的全栈工程师，在金融与电信行业核心系统有真实落地经历，具备从架构设计、编码到容器化部署的全链路能力，多次以项目技术组长身份带领小团队完成交付。目前正在深入学习 OpenClaw Agent 及 AI/LLM 相关技术。',
+        text: '19年工作经验的全栈工程师，在金融与电信行业核心系统有真实落地经历，具备从架构设计、编码到容器化部署的全链路能力，多次以项目技术组长身份带领小团队完成交付。目前正在深入研究 AI/LLM 底层技术，并基于 OpenClaw 等框架进行 Agent 应用开发与部署实践。',
         body: '当前在东方国信（BONC）任软件研发工程师，服务年限12年+，参与和主导了吉林银行、吉林联通、山西银行等多个省级行业数字化项目。技术栈以 Java/Spring Cloud 为核心，熟悉 Hive/Kafka 大数据生态，近年完成 K8s 容器化部署实践。',
         honest: {
           title: '⚑ 猎头注意事项（如实说明）',
@@ -24,7 +24,7 @@ export const translations = {
             '公司官方职级为<strong>软件工程师</strong>，项目中担任组长',
             '带队规模为<strong>小团队</strong>，6人以下为主',
             '19年职业生涯主要在<strong>2家公司</strong>度过（跳槽少）',
-            'AI/LLM 及 <strong>OpenClaw Agent</strong> 为个人积极学习方向',
+            '积极探索 AI/LLM 底层技术及 <strong>OpenClaw Agent</strong> 应用落地',
             '吉林大学软件工程<strong>自考本科</strong>（已取得学士学位）',
             '性能提升数据来自<strong>项目实际测量</strong>，可详述'
           ]
@@ -59,10 +59,10 @@ export const translations = {
         advice: { label: '⚑ 猎头推荐建议', items: ['以<strong>行业经验+量化结果</strong>定位，不以职级', '12年同公司体现<strong>稳定性与忠诚度</strong>', '全栈能力是<strong>项目交付效率</strong>的保证', '可提供<strong>项目技术文档</strong>作佐证', '期望的<strong>汇报对象</strong>：技术总监/CTO'] }
       }
     },
-    cta: { title: '安排与魏超的对话', sub: '技术讨论、职位匹配或面试安排，欢迎直接联系。通常24小时内回复。', email: '发送邮件 →', phone: '电话联系 →', home: '查看技术主页 →' }
+    cta: { title: '安排与魏超的对话', sub: '技术讨论、职位匹配或面试安排，欢迎直接联系。通常24小时内回复。', email: '发送邮件 →', phone: '电话联系 →', home: '查看个人主页 →' }
   },
   en: {
-    topbar: { back: '← Tech Portfolio', center: 'CANDIDATE BRIEF', share: 'Share', print: 'Print / PDF', copied: 'Copied' },
+    topbar: { back: '← Personal Homepage', center: 'CANDIDATE BRIEF', share: 'Share', print: 'Print / PDF', copied: 'Copied' },
     hero: { eyebrow: 'Candidate Brief · Senior Engineer Profile', name: 'Wei Chao', title: 'Senior Software Engineer / Tech Lead · 19 Yrs Exp', tags: ['Finance', 'Telecom', 'Java / Spring Cloud', 'Big Data', 'K8s / Docker', 'Tech Lead'], avail: 'Open to Opportunities · 2026', loc: 'Changchun · Remote · Travel' },
     sidebar: {
       note: { label: 'Position Note', title: 'Software Engineer', sub: '↳ Acts as Tech Lead in multiple projects' },
@@ -76,7 +76,7 @@ export const translations = {
     content: {
       summary: {
         title: 'Executive Summary', sub: 'EXECUTIVE SUMMARY',
-        text: 'Full-stack engineer with 19 years of experience, specializing in core systems for finance and telecom industries. Proven ability in architecture design, coding, and containerized deployment. Frequently leads small teams to successful project delivery. Actively learning OpenClaw Agent and AI/LLM technologies.',
+        text: 'Full-stack engineer with 19 years of experience, specializing in core systems for finance and telecom industries. Proven ability in architecture design, coding, and containerized deployment. Frequently leads small teams to successful project delivery. Actively researching underlying AI/LLM technologies and practicing Agent application development and deployment based on frameworks like OpenClaw.',
         body: 'Currently a Software R&D Engineer at BONC (12+ years). Led and participated in multiple provincial-level digital projects for Jilin Bank, Jilin Unicom, and Shanxi Bank. Core stack is Java/Spring Cloud, familiar with Hive/Kafka ecosystem, and recently implemented K8s containerized deployments.',
         honest: {
           title: '⚑ Notes for HR / Headhunters',
@@ -84,7 +84,7 @@ export const translations = {
             'Official title is <strong>Software Engineer</strong>; acts as Tech Lead in projects.',
             'Experienced in leading <strong>small teams</strong> (under 6 people).',
             'Highly stable: 19-year career spent primarily in <strong>2 companies</strong>.',
-            'Actively learning AI/LLM and <strong>OpenClaw Agent</strong>.',
+            'Actively exploring AI/LLM technologies and <strong>OpenClaw Agent</strong> implementations.',
             'Education: <strong>Self-taught Bachelor\'s degree</strong> in Software Engineering (Degree obtained).',
             'Performance metrics are from <strong>actual project measurements</strong>.'
           ]
@@ -119,10 +119,10 @@ export const translations = {
         advice: { label: '⚑ Headhunter Advice', items: ['Position based on <strong>industry experience + quantified results</strong>, not just title', '12 years in one company shows <strong>stability and loyalty</strong>', 'Full-stack capability guarantees <strong>project delivery efficiency</strong>', 'Can provide <strong>technical documentation</strong> as proof', 'Expected reporting line: <strong>Tech Director / CTO</strong>'] }
       }
     },
-    cta: { title: 'Arrange a Conversation with Wei Chao', sub: 'For technical discussions, role matching, or interviews, feel free to reach out directly. Usually replies within 24 hours.', email: 'Send Email →', phone: 'Call Now →', home: 'View Tech Portfolio →' }
+    cta: { title: 'Arrange a Conversation with Wei Chao', sub: 'For technical discussions, role matching, or interviews, feel free to reach out directly. Usually replies within 24 hours.', email: 'Send Email →', phone: 'Call Now →', home: 'View Personal Homepage →' }
   },
   ja: {
-    topbar: { back: '← 技術ポートフォリオ', center: '候補者概要 · CANDIDATE BRIEF', share: '共有', print: '印刷 / PDF', copied: 'コピーしました' },
+    topbar: { back: '← 個人サイト', center: '候補者概要 · CANDIDATE BRIEF', share: '共有', print: '印刷 / PDF', copied: 'コピーしました' },
     hero: { eyebrow: '候補者概要 · Senior Engineer Profile', name: '魏 超 (ギ チョウ)', title: 'シニアソフトウェアエンジニア / テックリード · 経験19年', tags: ['金融業界', '通信業界', 'Java / Spring Cloud', 'ビッグデータ', 'K8s コンテナ化', 'テックリード'], avail: '転職活動中 · 2026', loc: '長春 · リモート可 · 出張可' },
     sidebar: {
       note: { label: '役職に関する注記', title: 'ソフトウェアエンジニア', sub: '↳ 複数のプロジェクトでテックリードを担当' },
@@ -136,7 +136,7 @@ export const translations = {
     content: {
       summary: {
         title: '概要', sub: 'EXECUTIVE SUMMARY',
-        text: '金融および通信業界のコアシステムにおいて19年の経験を持つフルスタックエンジニア。アーキテクチャ設計、コーディング、コンテナ化展開の全工程に対応可能。小規模チームを率いてのプロジェクト完遂経験多数。現在、OpenClaw AgentおよびAI/LLM技術を積極的に学習中。',
+        text: '金融および通信業界のコアシステムにおいて19年の経験を持つフルスタックエンジニア。アーキテクチャ設計、コーディング、コンテナ化展開の全工程に対応可能。小規模チームを率いてのプロジェクト完遂経験多数。現在、AI/LLMの基盤技術を深く研究し、OpenClawなどのフレームワークを用いたAgentアプリケーションの開発とデプロイを実践中。',
         body: '現在、BONCにてソフトウェア研究開発エンジニアとして12年以上勤務。吉林銀行、吉林通信、山西銀行などの省レベルのデジタルプロジェクトを主導。コア技術はJava/Spring Cloudで、Hive/Kafkaエコシステムにも精通しており、近年はK8sコンテナ化展開を実践。',
         honest: {
           title: '⚑ HR / ヘッドハンター向け特記事項',
@@ -144,7 +144,7 @@ export const translations = {
             '公式な役職は<strong>ソフトウェアエンジニア</strong>ですが、プロジェクトではテックリードを務めています。',
             '<strong>小規模チーム</strong>（6人以下）のマネジメント経験が豊富です。',
             '19年のキャリアの大部分を<strong>2社</strong>で過ごしており、非常に安定しています。',
-            'AI/LLMおよび<strong>OpenClaw Agent</strong>を積極的に学習中です。',
+            'AI/LLM基盤技術および<strong>OpenClaw Agent</strong>の実装を積極的に探求しています。',
             '学歴：独学（自学考試）によるソフトウェア工学の<strong>学士課程修了</strong>（学士号取得済み）。',
             'パフォーマンス向上のデータは<strong>実際のプロジェクト測定値</strong>に基づいています。'
           ]
@@ -179,6 +179,6 @@ export const translations = {
         advice: { label: '⚑ ヘッドハンターへのアドバイス', items: ['役職だけでなく、<strong>業界経験＋定量的な結果</strong>に基づくポジショニング', '1社での12年の経験は<strong>安定性と忠誠心</strong>を示しています', 'フルスタックの能力は<strong>プロジェクトの納品効率</strong>を保証します', '証明として<strong>技術ドキュメント</strong>を提供可能', '希望する報告ライン：<strong>技術ディレクター / CTO</strong>'] }
       }
     },
-    cta: { title: '魏超との対話を設定する', sub: '技術的な議論、役割のすり合わせ、面接の設定など、お気軽にご連絡ください。通常24時間以内に返信いたします。', email: 'メールを送信 →', phone: '電話をかける →', home: '技術ポートフォリオを見る →' }
+    cta: { title: '魏超との対話を設定する', sub: '技術的な議論、役割のすり合わせ、面接の設定など、お気軽にご連絡ください。通常24時間以内に返信いたします。', email: 'メールを送信 →', phone: '電話をかける →', home: '個人サイトを見る →' }
   }
 };
