@@ -2,7 +2,7 @@ export type Language = 'zh' | 'en' | 'ja';
 
 export const translations = {
   zh: {
-    topbar: { back: '← 个人主页', center: '候选人简报 · CANDIDATE BRIEF', share: '分享', print: '打印 / PDF', copied: '已复制' },
+    topbar: { back: '个人主页', center: '候选人简报 · CANDIDATE BRIEF', share: '分享', print: '打印 / PDF', copied: '已复制' },
     hero: { eyebrow: '候选人简报 · Senior Engineer Profile', name: '魏超', title: '高级软件工程师 / 项目技术组长 · 19年经验', tags: ['金融行业', '电信行业', 'Java / Spring Cloud', '大数据治理', 'K8s 容器化', '开发组长'], avail: '开放职业机会 · 2026', loc: '长春 · 可远程 · 可出差' },
     sidebar: {
       note: { label: '职位说明', title: '软件工程师', sub: '↳ 多个项目担任开发组长 / 技术负责人' },
@@ -62,7 +62,7 @@ export const translations = {
     cta: { title: '安排与魏超的对话', sub: '技术讨论、职位匹配或面试安排，欢迎直接联系。通常24小时内回复。', email: '发送邮件 →', phone: '电话联系 →', home: '查看个人主页 →' }
   },
   en: {
-    topbar: { back: '← Personal Homepage', center: 'CANDIDATE BRIEF', share: 'Share', print: 'Print / PDF', copied: 'Copied' },
+    topbar: { back: 'Personal Homepage', center: 'CANDIDATE BRIEF', share: 'Share', print: 'Print / PDF', copied: 'Copied' },
     hero: { eyebrow: 'Candidate Brief · Senior Engineer Profile', name: 'Wei Chao', title: 'Senior Software Engineer / Tech Lead · 19 Yrs Exp', tags: ['Finance', 'Telecom', 'Java / Spring Cloud', 'Big Data', 'K8s / Docker', 'Tech Lead'], avail: 'Open to Opportunities · 2026', loc: 'Changchun · Remote · Travel' },
     sidebar: {
       note: { label: 'Position Note', title: 'Software Engineer', sub: '↳ Acts as Tech Lead in multiple projects' },
@@ -122,7 +122,7 @@ export const translations = {
     cta: { title: 'Arrange a Conversation with Wei Chao', sub: 'For technical discussions, role matching, or interviews, feel free to reach out directly. Usually replies within 24 hours.', email: 'Send Email →', phone: 'Call Now →', home: 'View Personal Homepage →' }
   },
   ja: {
-    topbar: { back: '← 個人サイト', center: '候補者概要 · CANDIDATE BRIEF', share: '共有', print: '印刷 / PDF', copied: 'コピーしました' },
+    topbar: { back: '個人サイト', center: '候補者概要 · CANDIDATE BRIEF', share: '共有', print: '印刷 / PDF', copied: 'コピーしました' },
     hero: { eyebrow: '候補者概要 · Senior Engineer Profile', name: '魏 超 (ギ チョウ)', title: 'シニアソフトウェアエンジニア / テックリード · 経験19年', tags: ['金融業界', '通信業界', 'Java / Spring Cloud', 'ビッグデータ', 'K8s コンテナ化', 'テックリード'], avail: '転職活動中 · 2026', loc: '長春 · リモート可 · 出張可' },
     sidebar: {
       note: { label: '役職に関する注記', title: 'ソフトウェアエンジニア', sub: '↳ 複数のプロジェクトでテックリードを担当' },
