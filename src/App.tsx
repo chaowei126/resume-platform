@@ -95,7 +95,7 @@ export default function App() {
             </div>
             <div className="flex flex-wrap gap-1.5 mb-6">
               {t.hero.tags.map((tag, i) => (
-                <div key={i} className="text-[10px] tracking-[2px] text-navy border border-rule px-2.5 py-1 uppercase bg-bg transition-colors duration-300">
+                <div key={i} className="text-[10px] tracking-[2px] text-mid border border-rule px-2.5 py-1 uppercase bg-paper transition-colors duration-300 hover:border-accent hover:text-accent">
                   {tag}
                 </div>
               ))}
@@ -255,7 +255,7 @@ export default function App() {
                   <div className={`absolute left-[-4px] top-2 w-[9px] h-[9px] rounded-full border-2 ${item.now ? 'bg-accent border-accent' : 'bg-paper border-rule'} print-exact transition-colors duration-300`}></div>
                   <div className="flex items-center gap-2.5 mb-1 flex-wrap">
                     <span className="text-[11px] text-muted tracking-[1px]">{item.period}</span>
-                    <span className={`text-[9px] tracking-[2px] uppercase px-2 py-0.5 border transition-colors duration-300 ${item.now ? 'text-accent border-accent-border bg-accent-dim' : 'text-navy border-[#c0c8da] bg-[#f4f6fb] dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300'}`}>{item.badge}</span>
+                    <span className={`text-[9px] tracking-[2px] uppercase px-2 py-0.5 border transition-colors duration-300 ${item.now ? 'text-accent border-accent-border bg-accent-dim' : 'text-mid border-rule bg-paper'}`}>{item.badge}</span>
                   </div>
                   <div className="font-serif text-base text-ink font-semibold mb-0.5 transition-colors duration-300">{item.co}</div>
                   <div className="text-xs text-mid mb-2.5 italic">{item.role}</div>
@@ -293,7 +293,7 @@ export default function App() {
                   <div className="text-[11px] text-mid leading-[1.8] mb-3">{proj.desc}</div>
                   <div className="flex flex-wrap gap-1">
                     {proj.kpis.map((kpi, j) => (
-                      <span key={j} className="text-[10px] text-navy border border-[#c0c8da] bg-[#f4f6fb] dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300 px-2 py-0.5 transition-colors duration-300">{kpi}</span>
+                      <span key={j} className="text-[10px] text-mid border border-rule bg-paper px-2 py-0.5 transition-colors duration-300">{kpi}</span>
                     ))}
                   </div>
                 </div>
