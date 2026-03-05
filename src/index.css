@@ -70,12 +70,14 @@ body {
     print-color-adjust: exact; 
   }
   .main-grid {
-    display: block !important;
+    display: grid !important;
+    grid-template-columns: 280px 1fr !important;
+    gap: 0 !important;
   }
   .sidebar-col {
-    border-right: none !important;
-    padding-right: 0 !important;
-    margin-bottom: 2rem;
+    border-right: 1px solid var(--rule) !important;
+    padding-right: 2rem !important;
+    margin-bottom: 0 !important;
   }
   .content-col {
     padding-left: 0 !important;
