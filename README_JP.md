@@ -1,4 +1,4 @@
-# Wei Chao - Senior Software Engineer / Tech Lead
+# 魏 超 (Wei Chao) - シニアソフトウェアエンジニア / テックリード
 
 🌐 [English](README.md) | [中文](README_CN.md) | **日本語**
 
@@ -7,49 +7,49 @@
 [![Stack](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Cloud%20%7C%20Big%20Data-orange.svg)](#)
 [![Learning](https://img.shields.io/badge/Learning-OpenClaw%20Agent%20%7C%20AI-purple.svg)](#)
 
-> Full-stack engineer with 19 years of experience, specializing in data quality and data analysis platforms. Proven track record in delivery of platform projects for finance (e.g., reporting systems) and telecom (e.g., business analysis systems) industries. Proven ability in full-cycle development, from architecture design and coding to containerized deployment. Frequently leads small teams as a project tech lead to successful delivery. Currently researching underlying AI/LLM technologies and practicing Agent application development based on frameworks like OpenClaw.
+> データ品質およびデータ分析プラットフォームを専門とする、経験19年のフルスタックエンジニア。金融業界（報送システムなど）および通信業界（経営分析システムなど）のプラットフォームプロジェクトにおいて豊富な実績を持つ。アーキテクチャ設計からコーディング、コンテナ展開に至るまで、全工程での開発能力を証明済み。プロジェクトテックリードとして小規模チームを率い、幾度となくデリバリーを成功させてきました。現在はAI/LLMの基盤技術を研究しており、OpenClawなどのフレームワークを用いたAgentアプリケーションの開発を実践中です。
 
-## 🌟 Core Competencies
+## 🌟 コアコンピテンシー (Core Competencies)
 
-* **Backend Architecture**: Java, Spring Cloud, Spring Boot
-* **Big Data Ecosystem**: Hadoop, Hive, Kafka, HBase, ELK
-* **Cloud Native & DevOps**: Kubernetes (K8s), Docker, Jenkins, Linux/Shell
-* **Frontend & Full-stack**: Vue.js, Node.js, Uniapp, React
-* **Databases**: MySQL, Redis
-* **Business Domains**: Banking Reporting Systems, Telecom Business Analysis Systems, Data Quality & Analysis Platforms, Marketing Hub
+* **バックエンドアーキテクチャ**: Java, Spring Cloud, Spring Boot
+* **ビッグデータ環境**: Hadoop, Hive, Kafka, HBase, ELK
+* **クラウドネイティブ & DevOps**: Kubernetes (K8s), Docker, Jenkins, Linux/Shell
+* **フロントエンド & フルスタック**: Vue.js, Node.js, Uniapp, React
+* **データベース**: MySQL, Redis
+* **得意分野**: 銀行報送システム、通信経営分析システム、データ品質・分析プラットフォーム、マーケティング基盤
 
-## 🏆 Key Projects
+## 🏆 主なプロジェクト (Key Projects)
 
-1.  **Jilin Bank Data Immune System** (2025—2026)
-    * Bank-wide data quality control platform with a closed-loop architecture. Anomaly detection speedup by 20%, achieved 100% closed-loop remediation for data issues.
-2.  **Big Data Platform (Jilin Telecom)** (2016—2017)
-    * Refactored underlying ETL logic, introducing parallel computing and intermediate table strategies. Wide-table processing time reduced by 4+ hours, self-service data fetch reduced by 2+ hours.
-3.  **Shanxi Bank Marketing Hub** (2022—2023)
-    * Spring Cloud-based bank marketing hub. Supported rapid rule configuration and H5 page generation, integrating online and offline data linkage.
-4.  **Jilin Unicom Legacy User Zone** (2024)
-    * Exclusive platform for legacy users integrating multiple marketing channels. Responsible for cloud platform deployment, K8s application updates, and system maintenance.
+1.  **吉林銀行 データ免疫システム** (2025—2026)
+    * クローズドループアーキテクチャを備えた全行レベルのデータ品質管理プラットフォーム。異常検知のスピードを20%向上させ、データ問題に対する100%のクローズドループ改善を達成しました。
+2.  **ビッグデータプラットフォーム（吉林通信）** (2016—2017)
+    * 基礎となるETLロジックをリファクタリングし、並列計算と中間テーブル戦略を導入。ワイドテーブルの処理時間を4時間以上短縮し、セルフサービスのデータ取得を2時間以上短縮しました。
+3.  **山西銀行 マーケティングプラットフォーム** (2022—2023)
+    * Spring Cloudベースの銀行向けマーケティングハブ。迅速なルール構成とH5ページの生成をサポートし、オンラインとオフラインのデータ連携を統合しました。
+4.  **吉林聯通 既存ユーザー向けゾーン** (2024)
+    * 複数のマーケティングチャネルを統合した、既存ユーザー専用のプラットフォーム。クラウドプラットフォームのデプロイ、K8sアプリケーションの更新、システムの保守を担当しました。
 
 ---
 
-## 💻 About This Resume Project
+## 💻 このレジュメプロジェクトについて (About This Resume Project)
 
-This is an interactive online resume (Candidate Brief) platform built with a modern frontend tech stack.
+これは、モダンなフロントエンド技術スタックで構築されたインタラクティブなオンラインレジュメ（候補者概要）プラットフォームです。
 
-### ✨ Features
-* 🌍 **Multi-language Support (i18n)**: One-click switch between Chinese (ZH), English (EN), and Japanese (JA).
-* 📱 **Responsive Design**: Perfectly adapted for both desktop and mobile browsing.
-* 🖨️ **Print Friendly**: Deeply optimized `@media print` styles, supporting one-click export to beautifully formatted PDFs.
-* ⚡ **Modern Tech Stack**: React 19 + Vite + Tailwind CSS v4 + Framer Motion.
+### ✨ 特徴 (Features)
+* 🌍 **多言語対応 (i18n)**: 中国語 (ZH)、英語 (EN)、日本語 (JA) をワンクリックで切り替え。
+* 📱 **レスポンシブデザイン**: デスクトップとモバイルの表示に完全に適応。
+* 🖨️ **印刷フレンドリー**: 深く最適化された `@media print` スタイルにより、美しくレイアウトされたPDFへのワンクリックエクスポートをサポート。
+* ⚡ **モダンテクノロジースタック**: React 19 + Vite + Tailwind CSS v4 + Framer Motion.
 
-### 🛠️ Local Development
+### 🛠️ ローカル開発環境 (Local Development)
 
 ```bash
-# 1. Install dependencies
+# 1. 依存関係のインストール
 npm install
 
-# 2. Start the development server
+# 2. 開発用サーバーの起動
 npm run dev
 
-# 3. Build for production
+# 3. 本番環境向けビルド
 npm run build
 ```
