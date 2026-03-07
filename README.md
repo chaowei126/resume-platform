@@ -1,5 +1,7 @@
 # Wei Chao - Senior Software Engineer / Tech Lead
 
+🌐 **English** | [中文](README_CN.md) | [日本語](README_JP.md)
+
 [![Experience](https://img.shields.io/badge/Experience-19%20Years-blue.svg)](#)
 [![Role](https://img.shields.io/badge/Role-Tech%20Lead-success.svg)](#)
 [![Stack](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Cloud%20%7C%20Big%20Data-orange.svg)](#)
