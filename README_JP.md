@@ -5,7 +5,7 @@
 [![Stack](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Cloud%20%7C%20Big%20Data-orange.svg)](#)
 [![Learning](https://img.shields.io/badge/Learning-OpenClaw%20Agent%20%7C%20AI-purple.svg)](#)
 
-> Full-stack engineer with 19 years of experience, specializing in core systems for the finance and telecom industries. Proven ability in full-cycle development, from architecture design and coding to containerized deployment. Frequently leads small teams as a project tech lead to successful delivery. Currently researching underlying AI/LLM technologies and practicing Agent application development based on frameworks like OpenClaw.
+> Full-stack engineer with 19 years of experience, specializing in data quality and data analysis platforms. Proven track record in delivery of platform projects for finance (e.g., reporting systems) and telecom (e.g., business analysis systems) industries. Proven ability in full-cycle development, from architecture design and coding to containerized deployment. Frequently leads small teams as a project tech lead to successful delivery. Currently researching underlying AI/LLM technologies and practicing Agent application development based on frameworks like OpenClaw.
 
 ## 🌟 Core Competencies
 
@@ -14,11 +14,11 @@
 * **Cloud Native & DevOps**: Kubernetes (K8s), Docker, Jenkins, Linux/Shell
 * **Frontend & Full-stack**: Vue.js, Node.js, Uniapp, React
 * **Databases**: MySQL, Redis
-* **Business Domains**: Banking/Financial Systems, Telecom Operator Platforms, Data Governance, Enterprise Digitalization, Marketing Hub
+* **Business Domains**: Banking Reporting Systems, Telecom Business Analysis Systems, Data Quality & Analysis Platforms, Marketing Hub
 
 ## 🏆 Key Projects
 
-1.  **Jilin Bank Data Verification System** (2025—2026)
+1.  **Jilin Bank Data Immune System** (2025—2026)
     * Bank-wide data quality control platform with a closed-loop architecture. Anomaly detection speedup by 20%, achieved 100% closed-loop remediation for data issues.
 2.  **Big Data Platform (Jilin Telecom)** (2016—2017)
     * Refactored underlying ETL logic, introducing parallel computing and intermediate table strategies. Wide-table processing time reduced by 4+ hours, self-service data fetch reduced by 2+ hours.
