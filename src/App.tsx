@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { translations, Language } from './i18n';
 import { Moon, Sun } from 'lucide-react';
+import { exportWord } from './exportWord';
 
 export default function App() {
   const [lang, setLang] = useState<Language>(() => {
     const browserLang = navigator.language.toLowerCase();
-    if (browserLang.startsWith('zh')) return 'zh'; 
-    if (browserLang.startsWith('ja')) return 'ja'; 
+    if (browserLang.startsWith('zh')) return 'zh';
+    if (browserLang.startsWith('ja')) return 'ja';
     return 'en';
   });
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -33,14 +34,8 @@ export default function App() {
     }
   }, []);
 
-  const handlePrint = () => {
-    if (window.self !== window.top) {
-      const url = new URL(window.location.href);
-      url.searchParams.set('print', 'true');
-      window.open(url.toString(), '_blank');
-    } else {
-      window.print();
-    }
+  const handleExportWord = () => {
+    exportWord(lang);
   };
 
   const toggleTheme = () => {
@@ -49,7 +44,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-bg text-ink font-body selection:bg-accent-dim selection:text-accent transition-colors duration-300">
-      
+
       {/* Topbar */}
       <div className="bg-bg border-b border-rule sticky top-0 z-50 no-print transition-colors duration-300">
         <div className="max-w-[1280px] mx-auto px-5 md:px-12 py-2.5 flex justify-between items-center">
@@ -68,16 +63,15 @@ export default function App() {
                 <button
                   key={l}
                   onClick={() => setLang(l)}
-                  className={`px-3 py-1 text-[10px] uppercase tracking-wider transition-colors ${
-                    lang === l ? 'bg-accent text-white font-bold' : 'text-muted hover:text-ink'
-                  }`}
+                  className={`px-3 py-1 text-[10px] uppercase tracking-wider transition-colors ${lang === l ? 'bg-accent text-white font-bold' : 'text-muted hover:text-ink'
+                    }`}
                 >
                   {l}
                 </button>
               ))}
             </div>
-            <button onClick={handlePrint} className="bg-transparent border border-rule text-mid px-3.5 py-1.5 text-[10px] tracking-[2px] uppercase cursor-pointer transition-all hover:border-accent hover:text-accent font-body">
-              {t.topbar.print}
+            <button onClick={handleExportWord} className="bg-transparent border border-rule text-mid px-3.5 py-1.5 text-[10px] tracking-[2px] uppercase cursor-pointer transition-all hover:border-accent hover:text-accent font-body">
+              {t.topbar.export}
             </button>
           </div>
         </div>
@@ -123,10 +117,10 @@ export default function App() {
 
       {/* Main Layout */}
       <div className="max-w-[1280px] mx-auto px-5 md:px-12 grid grid-cols-1 md:grid-cols-[280px_1fr] gap-0 main-grid">
-        
+
         {/* Sidebar */}
         <aside className="md:border-r border-rule py-10 md:pr-8 sidebar-col border-b md:border-b-0 transition-colors duration-300">
-          
+
           <div className="mb-8">
             <div className="bg-accent-dim border border-accent-border p-3 mb-5 transition-colors duration-300">
               <div className="text-[9px] tracking-[3px] text-accent uppercase mb-1.5">{t.sidebar.note.label}</div>
@@ -213,7 +207,7 @@ export default function App() {
 
         {/* Content */}
         <div className="py-10 md:pl-14 content-col">
-          
+
           {/* Summary */}
           <div className="mb-12">
             <div className="font-serif text-[22px] text-ink mb-5 pb-2.5 border-b-2 border-ink flex justify-between items-baseline transition-colors duration-300">
@@ -226,14 +220,14 @@ export default function App() {
             <p className="text-[13px] text-mid leading-loose mb-5">
               {t.content.summary.body}
             </p>
-            
+
             <div className="bg-accent-dim border border-accent-border p-5 my-6 transition-colors duration-300">
               <div className="text-[10px] tracking-[3px] text-accent uppercase mb-3">{t.content.summary.honest.title}</div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
                 {t.content.summary.honest.items.map((item, i) => (
                   <div key={i} className="text-xs text-mid pl-3.5 relative leading-relaxed">
                     <span className="absolute left-0 text-accent text-base leading-[1.2]">·</span>
-                    <span dangerouslySetInnerHTML={{__html: item}} />
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
                   </div>
                 ))}
               </div>
@@ -243,7 +237,7 @@ export default function App() {
               {t.content.summary.kpis.map((kpi, i) => (
                 <div key={i} className="bg-paper py-4 px-4 text-center transition-colors duration-300">
                   <div className="font-serif text-[28px] text-accent leading-none mb-1">{kpi.n}</div>
-                  <div className="text-[10px] text-muted tracking-[1px] leading-[1.6]" dangerouslySetInnerHTML={{__html: kpi.d}}></div>
+                  <div className="text-[10px] text-muted tracking-[1px] leading-[1.6]" dangerouslySetInnerHTML={{ __html: kpi.d }}></div>
                 </div>
               ))}
             </div>
@@ -271,7 +265,7 @@ export default function App() {
                       {item.wins.map((win, j) => (
                         <li key={j} className="text-xs text-ink2 pl-3.5 relative leading-[1.7] transition-colors duration-300">
                           <span className="absolute left-0 text-accent">—</span>
-                          <span dangerouslySetInnerHTML={{__html: win}} />
+                          <span dangerouslySetInnerHTML={{ __html: win }} />
                         </li>
                       ))}
                     </ul>
@@ -297,6 +291,7 @@ export default function App() {
                   <div className="font-serif text-sm text-ink mb-1 font-semibold leading-[1.3] transition-colors duration-300">{proj.title}</div>
                   <div className="text-[11px] text-accent mb-2 tracking-[1px] transition-colors duration-300">{proj.role}</div>
                   <div className="text-[11px] text-mid leading-[1.8] mb-3">{proj.desc}</div>
+
                   <div className="flex flex-wrap gap-1">
                     {proj.kpis.map((kpi, j) => (
                       <span key={j} className="text-[10px] text-mid border border-rule bg-paper px-2 py-0.5 transition-colors duration-300">{kpi}</span>
@@ -320,7 +315,7 @@ export default function App() {
                   {t.content.fit.good.items.map((item, i) => (
                     <li key={i} className="text-xs text-mid pl-3.5 relative leading-[1.7]">
                       <span className="absolute left-0 text-accent transition-colors duration-300">→</span>
-                      <span dangerouslySetInnerHTML={{__html: item}} />
+                      <span dangerouslySetInnerHTML={{ __html: item }} />
                     </li>
                   ))}
                 </ul>
@@ -331,7 +326,7 @@ export default function App() {
                   {t.content.fit.advice.items.map((item, i) => (
                     <li key={i} className="text-xs text-mid pl-3.5 relative leading-[1.7]">
                       <span className="absolute left-0 text-accent transition-colors duration-300">—</span>
-                      <span dangerouslySetInnerHTML={{__html: item}} />
+                      <span dangerouslySetInnerHTML={{ __html: item }} />
                     </li>
                   ))}
                 </ul>
